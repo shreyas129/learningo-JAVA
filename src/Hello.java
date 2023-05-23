@@ -373,5 +373,21 @@ public class Hello {
 
         // array bhi sikh lo bhai
         int nums[] = {3, 7, 2, 4};
+        System.out.println(nums[0]); // Aap yaha 0 se 3 tak kuch bhi lich satke he
+
+        // to change the array number
+        int numz[] = {3, 7, 2, 4};
+        numz[1] = 6;
+        System.out.println(numz[1]); // Aap yaha 0 se 3 tak kuch bhi lich satke he
+
+        // to make it dynamic
+        int numzz[] = new int[4];
+        numzz[0] = 4;
+        numzz[1] = 8;
+        numzz[2] = 3;
+        numzz[3] = 9;
+        for(int my = 0; my < 4; my++) {
+            System.out.println(numzz[my]);
+        }
     }
 }
