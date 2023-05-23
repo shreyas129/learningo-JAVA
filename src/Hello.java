@@ -1,6 +1,6 @@
 class Calculator {
-    public int add(int n1,int n2) {
-        int r = n1 + n2;
+    public int add(int number, int num) {
+        int r = number + num;
         return r;
     }
 }
@@ -18,8 +18,30 @@ class Computer {
 }  
 
 class Calculator2 {
-    public int add (int n1, int n2) {
-        return n1 + n2;
+    public int add (int sum, int fun, int bun){
+        return sum + fun + bun;
+    }
+}
+
+// overloading
+class Calculator3 {
+    public int add (int sum, int fun, int bun){
+        return sum + fun + bun;
+    }
+    public int add (int sum, int fun) {
+        return sum + fun;
+    }
+    public double add (double sum, int fun) {
+        return sum + fun;
+    }
+
+}
+
+class Calculator4 {
+    int jar = 5;
+    public int add(int sum, int fun) {
+        System.out.println(jar);
+        return sum + fun;
     }
 }
 
@@ -293,7 +315,7 @@ public class Hello {
         do {
             System.out.println("Hi " + dw);
             dw++;
-        } while (i <= 4); // It will at least print that one time
+        } while (dw <= 4); // It will at least print that one time
         // for loop
         for (int fl = 1; fl <= 4; fl++) {
             System.out.println("Hi " + fl);
@@ -324,8 +346,32 @@ public class Hello {
         String str = obj.getMeAPen(12);
         System.out.println(str);
 
-        // Computer wala 2
+        // Calculator wala 2
         Calculator2 odj = new Calculator2();
-        odj.add(num1, num2);
-    }   
+        int sum1 = odj.add(3, 4, 5);
+        System.out.println(sum1);
+
+        // adding another public int in calc 3
+        Calculator3 odjdj = new Calculator3();
+        int sum2 = odjdj.add(3, 4);
+        System.out.println(sum2);
+
+        // adding another public int in calc 4
+        int data = 10;
+        Calculator4 odjmaro = new Calculator4();
+        int sum3 = odjmaro.add(3, 4);
+        System.out.println(sum3);
+
+        // doing some chedchad in that
+        // int data = 10;
+        Calculator4 odjmario = new Calculator4();
+        Calculator4 odjmaromaro = new Calculator4();
+        // System.out.println(sum3);
+        odjmario.jar= 8;
+        System.out.println(odjmario.jar);
+        System.out.println(odjmaromaro.jar);
+
+        // array bhi sikh lo bhai
+        int nums[] = {3, 7, 2, 4};
+    }
 }
