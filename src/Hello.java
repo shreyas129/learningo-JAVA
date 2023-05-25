@@ -389,5 +389,67 @@ public class Hello {
         for(int my = 0; my < 4; my++) {
             System.out.println(numzz[my]);
         }
+
+        // two dimensional array kya hota he
+        int numy[][] = new int[3][4];
+        for(int tie = 0; tie < 3; tie++) {
+            for(int no = 0; no < 4; no++) {
+                System.out.print(numy[tie][no] + " ");
+            }
+            System.out.println();
+        }
+
+        // to fetch random values
+        int numies[][] = new int[3][4];
+        for(int cut = 0; cut < 3; cut++) {
+            for(int but = 0; but < 4; but++) {
+                numies[cut][but] = (int)(Math.random() * 10);
+            }
+        }
+
+        for(int note = 0; note < 3; note++) {
+            for(int row = 0; row < 4; row++) {
+                System.out.print(numies[note][row] + " ");
+            }
+            System.out.println();
+        }
+
+        for(int r[] : numies) {
+            for(int m : r) {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
+        // jagged array error
+        int burner[][] = new int[3][];
+        burner[0] = new int[3];
+        burner[1] = new int[4];
+        burner[2] = new int[2];
+        for(int nut = 0; nut < burner.length; nut++) {
+            for(int shut = 0; shut < burner[nut].length; shut++) {
+                burner[nut][shut] = (int)(Math.random() * 10);
+            }
+        }
+        for(int bruh[] : burner) {
+            for(int m : bruh) {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+
+        // multi dimensional array kya hota he
+        int turner[][][] = new int[3][4][4];
+        for(int out = 0; out < turner.length; out++) {
+            for(int xyzback = 0; xyzback < turner[out].length; xyzback++) {
+                turner[out][xyzback][0] = (int)(Math.random() * 10);
+            }
+        }
+        for(int[] togue : burner) {
+            for(int m : togue) {
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
     }
 }
