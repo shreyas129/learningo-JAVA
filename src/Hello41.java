@@ -1,4 +1,4 @@
-class Human {
+class Human1 {
     private int age = 9;
     private String name = "Shreyas";
 
@@ -19,9 +19,9 @@ class Human {
     }
 }
 
-public class Hello40 {
+public class Hello41 {
     public static void main(String a[]) {
-        Human obj = new Human();
+        Human1 obj = new Human1();
         obj.setAge(43);
         obj.setName("Prashant");
 
