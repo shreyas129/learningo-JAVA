@@ -2,14 +2,14 @@ class A1 {
     public void show() {
         System.out.println("in A show");
     }
-    public void config () {
+       public void config () {
         System.out.println("in A Config");
     }
 }
 
 class B1 extends A1 {
-    public void show1() {
-
+    public void show() {
+        System.out.println("in B show");
     }
 }
 
