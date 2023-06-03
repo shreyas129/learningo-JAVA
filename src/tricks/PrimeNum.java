@@ -2,7 +2,7 @@ package tricks;
 
 public class PrimeNum {
     public static void main(String a[]) {
-        for(int i = 1; i < 100; i++) {
+        for(int i = 1; i < 99999999; i++) {
             for(int j = 1; j <= i; j++) {
                 if(i == j) {
                     System.out.println(i);
