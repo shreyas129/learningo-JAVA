@@ -1,4 +1,4 @@
-class calc {
+class calcbe {
     public int add(int num, int number) {
         return num + number;
     }
@@ -7,7 +7,7 @@ class calc {
     // }
 }
 
-class Advclac extends calc {
+class Advclac extends calcbe {
      public int add(int num, int number) {
          return num + number + 1;
      }
